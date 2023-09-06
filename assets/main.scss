@@ -1,0 +1,97 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+nav{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  background: #fff;
+  margin-bottom: 1em;
+}
+
+.navbar-nav{
+  .nav-item{
+    a{
+      color: #545454 !important;
+    }
+  }
+  .nav-link{
+    padding: none !important;
+  }
+}
+.youwind_button{
+  color: white;
+  font-weight: 400;
+  background-color: #2250ff;
+  border-radius: 50rem;
+  padding: 5px 40px 5px 40px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  &:hover{
+    font-weight: 500;
+    background-color:  #2250ff;
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+    color: white;
+  }
+}
+
+
+.image-background{
+  background-image: url("/assets/1_Cover.png");
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+}
+.people-background{
+  background-image: url("/assets/officepeople.jpg");
+  height: 250px;
+  background-position: center center;
+  background-size: cover;
+}
+
+/*! Headings */
+
+h1{
+  color: #2250ff;
+  text-shadow: 1px 1px 2px #112374;
+}
+h2{
+  color: black ;
+  font-size: 20px;
+}
+h3{
+  color: black ;
+  font-size: 18px ;
+}
+h4{
+  color: black;
+  font-size: 16px ;
+}
+h5{
+  color: black;
+  font-size: 14px;
+}
+
+.grayback {
+  background-color: #f7f8fb;
+}
+.darkgrayback {
+  background-color: #b3b8c7;
+}
+
+.blueback {
+  background-color: rgb(56, 56, 132);
+  border-radius: 15px 0px 0px 15px;
+  padding: 30px;
+  padding-left: 50px;
+  color: white;
+}
+
+.bluebacktriple {
+  background-color: rgb(56, 56, 132);
+  border-radius: 15px;
+  color: white;
+  height: 200px;
+}
