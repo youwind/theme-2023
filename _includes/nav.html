@@ -1,9 +1,9 @@
 {%- assign default_paths = site.pages | map: "path" -%}
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-<nav class="navbar navbar-expand-sm navbar-light">
+<nav class="navbar navbar-expand-sm navbar-light ms-3">
   <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">
-    <img src="/assets/logo_192.png" alt="logo" width="60px"/>
+    <img src="/assets/logo_192.png" alt="logo" width="40px"/>
   </a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,10 +27,10 @@
       <li class="nav-item">
         <a href="" class="nav-link">About us</a>
       </li>
-      <div class="rounded-pill btn-outline-primary ">
+      <div class="youwind_login">
         <a class="nav-link" target="_blank" href="https://app.youwindrenewables.com/">Log in</a>
       </div>
-      <div class="youwind_button">
+      <div class="youwind_button_nav">
         <a class="nav-link" target="_blank" href="https://app.youwindrenewables.com/" style="color: white;">Request Demo</a>
       </div>
       
