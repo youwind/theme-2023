@@ -88,19 +88,19 @@ h1, h2, h3, h4, h5, p, a {
 }
 
 .image-background {
-  background-image: url("/assets/1_Cover.png");
+  background-image: url("assets/1_Cover.png");
   height: 700px;
   background-position: center;
   background-size: cover;
 }
 .people-background {
-  background-image: url("/assets/officepeople.jpg");
+  background-image: url("assets/officepeople.jpg");
   height: 250px;
   background-position: center center;
   background-size: cover;
 }
 .graph_background { 
-  background-image: url("/assets/2_Background\ graph.svg");
+  background-image: url("assets/2_Background_graph.svg");
   width: 50%;
   background-size: cover;
 }
