@@ -2,14 +2,45 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+@font-face {
+  font-family: 'Silka';
+  src: url('fonts/Silka-Bold.otf') format("OpenType");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Silka';
+  src: url('fonts/Silka-Light.otf') format("OpenType");
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Silka';
+  src: url('fonts/Silka-Medium.otf') format("OpenType");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Silka';
+  src: url('fonts/Silka-Regular.otf') format("OpenType");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Silka';
+  src: url('fonts/Silka-SemiBold.otf') format("OpenType");
+  font-weight: 600;
+  font-style: normal;
+}
+
 nav{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Silka', sans-serif;
   font-size: 0.9em;
   background: #fff;
 }
 
 h1, h2, h3, h4, h5, p, a {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Silka', sans-serif;
 }
 
 .navbar-nav{
@@ -88,19 +119,19 @@ h1, h2, h3, h4, h5, p, a {
 }
 
 .image-background {
-  background-image: url("assets/1_Cover.png");
+  background-image: url("/assets/1_Cover.jpg");
   height: 700px;
   background-position: center;
   background-size: cover;
 }
 .people-background {
-  background-image: url("assets/officepeople.jpg");
+  background-image: url("/assets/officepeople.jpg");
   height: 250px;
   background-position: center center;
   background-size: cover;
 }
 .graph_background { 
-  background-image: url("assets/2_Background_graph.svg");
+  background-image: url("/assets/2_Background_graph.svg");
   width: 50%;
   background-size: cover;
 }
@@ -109,11 +140,13 @@ h1, h2, h3, h4, h5, p, a {
 
 h1{
   color: #2250ff;
-  font-weight: bold;
+  font-weight: SemiBold;
+  font-size: 72px;
 }
 h2{
   color: black ;
-  font-size: 20px;
+  font-weight: SilkaLight;
+  font-size: 30px;
 }
 h3{
   color: black ;
