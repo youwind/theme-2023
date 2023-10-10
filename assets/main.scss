@@ -2,28 +2,31 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+
 @font-face {
   font-family: 'Silka';
   src: url('fonts/Silka-Bold.otf') format("OpenType");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'Silka';
   src: url('fonts/Silka-Light.otf') format("OpenType");
-  font-weight: light;
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Silka';
   src: url('fonts/Silka-Medium.otf') format("OpenType");
-  font-weight: medium;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'Silka';
   src: url('fonts/Silka-Regular.otf') format("OpenType");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -32,14 +35,7 @@
   font-weight: 600;
   font-style: normal;
 }
-
-nav{
-  font-family: 'Silka', sans-serif;
-  font-size: 0.9em;
-  background: #fff;
-}
-
-h1, h2, h3, h4, h5, p, a {
+body {
   font-family: 'Silka', sans-serif;
 }
 
@@ -121,7 +117,7 @@ h1, h2, h3, h4, h5, p, a {
 .image-background {
   background-image: url("/assets/1_Cover.jpg");
   height: 700px;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
 }
 .people-background {
@@ -132,35 +128,93 @@ h1, h2, h3, h4, h5, p, a {
 }
 .graph_background { 
   background-image: url("/assets/2_Background_graph.svg");
-  width: 50%;
-  background-size: cover;
+  background-size: 50%;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+.marker_background { 
+  background-image: url("/assets/3_Background_graph.svg");
+  background-size: 50%;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+.bullseye_background { 
+  background-image: url("/assets/4_Background_graph.svg");
+  background-size: 50%;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+.wind_background { 
+  background-image: url("/assets/5_Background_graph.svg");
+  background-size: 50%;
+  background-position: top right;
+  background-repeat: no-repeat;
 }
 
-/*! Headings */
+/*! Headings & fonts */
 
 h1{
   color: #2250ff;
-  font-weight: SemiBold;
-  font-size: 72px;
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 74px;
+}
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 h2{
   color: black ;
-  font-weight: SilkaLight;
+  font-weight: 300;
   font-size: 30px;
+  line-height: 36px;
 }
 h3{
   color: black ;
   font-size: 42px ;
+  font-weight: 300;
+  line-height: 51px;
 }
 h4{
   color: #2250ff;
   font-size: 42px ;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 51px;
 }
 h5{
-  color: black;
-  font-size: 14px;
+  color: #2250ff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
 }
+.nav-link{
+  font-size: 18px;
+  line-height: 22px;
+  background: #fff;
+  font-weight: 400;
+}
+.semibold_30px{
+  color: black;
+  font-size: 1.875rem;
+  line-height: 2.3125;
+  font-weight: 600;
+}
+.semibold_42px{
+  color: #2250ff;
+  font-size: 2.625rem;
+  line-height: 3.75rem;
+  font-weight: 600;
+}
+.regular_24px{
+  color: black;
+  font-size: 1.5rem;
+  line-height: 1,8125;
+  font-weight: 400;
+}
+
+
+
 
 .grayback {
   background-color: #F7F8FB;
