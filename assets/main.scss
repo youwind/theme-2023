@@ -212,6 +212,10 @@ h5{
   line-height: 1,8125;
   font-weight: 400;
 }
+.bold_30px{
+  font-size: 1.875;
+  font-weight: 700;
+}
 
 
 
@@ -224,7 +228,10 @@ h5{
 }
 
 .blueback {
-  background-color: rgb(56, 56, 132);
+  background:linear-gradient(0deg, rgba(56, 56, 132, 0.8), rgba(56, 56, 132, 0.8)), url("/assets/7_Consultancy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 15px 0px 0px 15px;
   padding: 30px;
   padding-left: 50px;
