@@ -58,6 +58,7 @@ body {
   padding: 10px 40px 10px 40px;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
+  min-width: 190px;
   &:hover{
     font-weight: 500;
     background-color:  #0050ff;
@@ -122,8 +123,8 @@ body {
 }
 .people-background {
   background-image: url("/assets/officepeople.jpg");
-  height: 250px;
-  background-position: center center;
+  height: 300px;
+  background-position: 50% 60%;
   background-size: cover;
 }
 .graph_background { 
@@ -152,12 +153,15 @@ body {
 }
 
 /*! Headings & fonts */
+p {
+  font-size: 1.125rem;
+  line-height: normal;
+}
 
 h1{
   color: #2250ff;
   font-weight: 600;
-  font-size: 5rem;
-  line-height: 74px;
+  font-size: 4.5rem;
 }
 @media (max-width: 1000px) {
   h1 {
@@ -191,7 +195,6 @@ h5{
 .nav-link{
   font-size: 18px;
   line-height: 22px;
-  background: #fff;
   font-weight: 400;
 }
 .semibold_30px{
@@ -206,6 +209,10 @@ h5{
   line-height: 3.75rem;
   font-weight: 600;
 }
+.semibold_48px{
+  font-size: 3rem;
+  font-weight: 600;
+}
 .regular_24px{
   color: black;
   font-size: 1.5rem;
@@ -213,11 +220,32 @@ h5{
   font-weight: 400;
 }
 .bold_30px{
-  font-size: 1.875;
+  font-size: 1.875rem;
   font-weight: 700;
 }
-
-
+.bold_14px{
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.regular_14px{
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.semibold_14px{
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.white{
+  color: white;
+}
+.footerlink{
+  text-decoration: none;
+  color: black;
+}
+.footerlink:hover{
+  color: #2250ff;
+  text-decoration: underline;
+}
 
 
 .grayback {
@@ -237,10 +265,33 @@ h5{
   padding-left: 50px;
   color: white;
 }
+.blueback2 {
+  background:linear-gradient(0deg, rgba(56, 56, 132, 0.8), rgba(56, 56, 132, 0.8)), url("/assets/7_Workshops.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px 0px 0px 15px;
+  padding: 30px;
+  padding-left: 50px;
+  color: white;
+}
 
 .bluebacktriple {
   background-color: rgb(56, 56, 132);
   border-radius: 15px;
   color: white;
-  height: 200px;
+  height: 300px;
 }
+.hide{
+  display: none;
+}
+
+.showit:hover > .hide {
+  display: block;
+}
+
+/* .people-background:hover {
+  background:linear-gradient(0deg, rgba(254, 254, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/assets/officepeople.jpg");
+  background-position: center center;
+  background-size: cover;
+} */
